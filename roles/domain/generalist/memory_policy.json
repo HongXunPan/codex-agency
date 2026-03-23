@@ -1,0 +1,10 @@
+{
+  "read": [
+    "user_preference",
+    "workflow_method"
+  ],
+  "write_candidates": [
+    "workflow_method",
+    "meta_improvement"
+  ]
+}

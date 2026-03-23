@@ -1,0 +1,22 @@
+{
+  "id": "candidate-1a150e93c23d",
+  "kind": "domain_pattern",
+  "scope": "global",
+  "domain": [
+    "product-strategist"
+  ],
+  "trigger": [
+    "product-strategist",
+    "帮我规划 agency 的下一阶段演进路线"
+  ],
+  "instruction": "长期系统设计优先说明阶段目标、约束与演进路径。",
+  "evidence": [
+    "session-1dc805b18f3c",
+    "feedback-9f7d7054533b"
+  ],
+  "confidence": 0.88,
+  "status": "approved",
+  "source": "positive_feedback",
+  "created_at": "2026-03-21T02:56:36.539305+00:00",
+  "approved_at": "2026-03-21T02:56:49.961474+00:00"
+}

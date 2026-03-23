@@ -1,0 +1,34 @@
+{
+  "milestones": [
+    {
+      "id": "v1-bootstrap",
+      "title": "初始化目录与命令入口",
+      "status": "planned"
+    },
+    {
+      "id": "v1-routing",
+      "title": "任务分类与角色路由",
+      "status": "planned"
+    },
+    {
+      "id": "v1-feedback",
+      "title": "反馈抓取与候选记忆生成",
+      "status": "planned"
+    },
+    {
+      "id": "v1-review",
+      "title": "审批与长期记忆晋升",
+      "status": "planned"
+    },
+    {
+      "id": "v1-roadmap",
+      "title": "路线图沉淀与版本演进记录",
+      "status": "planned"
+    },
+    {
+      "id": "v1-sync",
+      "title": "已批准成果的同步能力",
+      "status": "planned"
+    }
+  ]
+}

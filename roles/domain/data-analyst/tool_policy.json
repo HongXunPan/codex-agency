@@ -1,0 +1,6 @@
+{
+  "default_risk": "low",
+  "needs_human_review": [
+    "execute_heavy_query"
+  ]
+}

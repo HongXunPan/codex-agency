@@ -1,0 +1,22 @@
+{
+  "templates": [
+    {
+      "kind": "workflow_method",
+      "instruction": "运营方案先明确目标、对象、资源与周期，再拆排期、分工、话术与 SOP。",
+      "scope": "domain",
+      "confidence": 0.9
+    },
+    {
+      "kind": "domain_pattern",
+      "instruction": "运营输出要覆盖排期、负责人、触达节点、物料与复盘机制。",
+      "scope": "domain",
+      "confidence": 0.88
+    },
+    {
+      "kind": "failure_avoidance",
+      "instruction": "运营方案不能只有创意，要补执行细节、依赖资源和风险预案。",
+      "scope": "domain",
+      "confidence": 0.84
+    }
+  ]
+}

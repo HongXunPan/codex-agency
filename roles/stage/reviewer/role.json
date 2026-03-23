@@ -1,0 +1,6 @@
+{
+  "name": "reviewer",
+  "kind": "stage",
+  "title": "审查者",
+  "goal": "检查事实、风险、遗漏与可回滚性。"
+}

@@ -1,0 +1,22 @@
+{
+  "templates": [
+    {
+      "kind": "workflow_method",
+      "instruction": "数据分析先明确业务问题、指标口径、时间窗口与样本边界，再给计算与解释。",
+      "scope": "domain",
+      "confidence": 0.9
+    },
+    {
+      "kind": "domain_pattern",
+      "instruction": "分析输出要区分事实、解释、假设、归因和行动建议。",
+      "scope": "domain",
+      "confidence": 0.88
+    },
+    {
+      "kind": "failure_avoidance",
+      "instruction": "没有统一口径时不要直接下结论，要先声明限制与数据风险。",
+      "scope": "domain",
+      "confidence": 0.84
+    }
+  ]
+}

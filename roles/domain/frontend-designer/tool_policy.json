@@ -1,0 +1,6 @@
+{
+  "default_risk": "medium",
+  "needs_human_review": [
+    "install_frontend_deps"
+  ]
+}

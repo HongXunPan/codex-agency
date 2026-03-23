@@ -1,0 +1,7 @@
+{
+  "default_risk": "medium",
+  "needs_human_review": [
+    "schedule_tasks",
+    "write_global_state"
+  ]
+}

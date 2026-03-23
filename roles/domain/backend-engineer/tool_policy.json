@@ -1,0 +1,8 @@
+{
+  "default_risk": "medium",
+  "needs_human_review": [
+    "write_global_state",
+    "db_migration",
+    "destructive_commands"
+  ]
+}

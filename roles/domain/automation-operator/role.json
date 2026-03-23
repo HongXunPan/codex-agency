@@ -1,0 +1,6 @@
+{
+  "name": "automation-operator",
+  "kind": "domain",
+  "title": "自动化操作员",
+  "goal": "设计可持续运行、可观测、可回滚的自动化流程。"
+}

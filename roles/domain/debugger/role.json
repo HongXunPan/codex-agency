@@ -1,0 +1,6 @@
+{
+  "name": "debugger",
+  "kind": "domain",
+  "title": "调试排障者",
+  "goal": "以证据为中心定位问题并给出最小修复路径。"
+}

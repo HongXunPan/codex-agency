@@ -1,0 +1,87 @@
+{
+  "prompt_budget": {
+    "base_persona": 300,
+    "domain_role": 400,
+    "stage_role": 250,
+    "memory": 500,
+    "task_summary": 300,
+    "normal_total": 1800,
+    "complex_total": 2500,
+    "identity_core": 260,
+    "identity_strategy": 220,
+    "project_summary": 260,
+    "memory_hits": 520,
+    "execution_mode": 80,
+    "fast_total": 1600
+  },
+  "retrieval_limits": {
+    "user_preference": 2,
+    "workflow_method": 3,
+    "domain_pattern": 2,
+    "failure_avoidance": 1,
+    "meta_improvement": 1,
+    "identity_strategy": 1,
+    "project_fact": 2,
+    "summary_snapshot": 1
+  },
+  "language": "zh-CN",
+  "feedback": {
+    "mode": "low_intrusion",
+    "positive_markers": [
+      "处理得很好",
+      "考虑得很好",
+      "讲得很清楚",
+      "写得很清楚",
+      "这个方式对",
+      "以后都这么做",
+      "这个结构我喜欢",
+      "这次不错",
+      "记住这个"
+    ],
+    "negative_markers": [
+      "不要这样",
+      "太啰嗦",
+      "这个方向不对",
+      "不要每次都问",
+      "别记这个",
+      "不喜欢这种方式"
+    ],
+    "preference_markers": [
+      "我更喜欢",
+      "以后先",
+      "优先这样",
+      "最好先",
+      "我喜欢这种",
+      "默认先"
+    ],
+    "exception_markers": [
+      "这次可以，但别默认这样",
+      "这次只是例外",
+      "不要记成长期",
+      "先别记这个",
+      "别默认这样"
+    ]
+  },
+  "runtime": {
+    "default_execution_mode": "fast",
+    "slow_stage_roles": [
+      "planner",
+      "reviewer",
+      "reflector"
+    ],
+    "slow_keywords": [
+      "架构",
+      "长期",
+      "方案",
+      "分阶段",
+      "复盘",
+      "系统",
+      "迁移",
+      "改造"
+    ]
+  },
+  "sync": {
+    "shared_backend": "git",
+    "sync_approved_only": true
+  }
+}

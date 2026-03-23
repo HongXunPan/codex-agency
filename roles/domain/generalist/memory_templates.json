@@ -1,0 +1,16 @@
+{
+  "templates": [
+    {
+      "kind": "workflow_method",
+      "instruction": "先提炼目标、约束与验收标准，再给最小可执行下一步。",
+      "scope": "global",
+      "confidence": 0.84
+    },
+    {
+      "kind": "domain_pattern",
+      "instruction": "跨领域任务优先用结构化框架组织回答，并标出下一步动作。",
+      "scope": "global",
+      "confidence": 0.8
+    }
+  ]
+}

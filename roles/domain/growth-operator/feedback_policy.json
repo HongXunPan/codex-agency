@@ -1,0 +1,45 @@
+{
+  "positive": [
+    {
+      "markers": [
+        "实验设计",
+        "成功阈值",
+        "目标人群",
+        "关键漏斗",
+        "复盘口径"
+      ],
+      "kind": "workflow_method",
+      "instruction": "增长方案先拆目标人群、关键漏斗、实验假设与成功阈值，再安排动作。",
+      "scope": "domain",
+      "confidence": 0.92
+    },
+    {
+      "markers": [
+        "成本",
+        "节奏",
+        "样本",
+        "风险",
+        "停启条件"
+      ],
+      "kind": "domain_pattern",
+      "instruction": "增长输出要同时说明指标、样本、成本、节奏、风险与复盘口径。",
+      "scope": "domain",
+      "confidence": 0.9
+    }
+  ],
+  "negative": [
+    {
+      "markers": [
+        "只有渠道",
+        "没有实验",
+        "没有阈值",
+        "没说成本",
+        "没说复盘"
+      ],
+      "kind": "failure_avoidance",
+      "instruction": "增长提案不要只列渠道动作，必须补实验设计、停启条件与资源约束。",
+      "scope": "domain",
+      "confidence": 0.9
+    }
+  ]
+}

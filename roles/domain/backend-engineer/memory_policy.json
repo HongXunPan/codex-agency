@@ -1,0 +1,12 @@
+{
+  "read": [
+    "workflow_method",
+    "failure_avoidance",
+    "domain_pattern"
+  ],
+  "write_candidates": [
+    "workflow_method",
+    "domain_pattern",
+    "failure_avoidance"
+  ]
+}

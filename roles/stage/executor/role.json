@@ -1,0 +1,6 @@
+{
+  "name": "executor",
+  "kind": "stage",
+  "title": "执行者",
+  "goal": "把当前任务推进到可验证状态。"
+}

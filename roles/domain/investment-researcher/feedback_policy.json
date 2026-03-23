@@ -1,0 +1,44 @@
+{
+  "positive": [
+    {
+      "markers": [
+        "估值假设",
+        "比较维度",
+        "时间范围",
+        "研究框架"
+      ],
+      "kind": "workflow_method",
+      "instruction": "投研任务先框定研究对象、时间范围、比较维度与估值框架，再给判断。",
+      "scope": "domain",
+      "confidence": 0.92
+    },
+    {
+      "markers": [
+        "催化剂",
+        "风险",
+        "事实和观点",
+        "假设透明",
+        "财报"
+      ],
+      "kind": "domain_pattern",
+      "instruction": "投研输出要区分事实、观点、估值假设、催化剂与风险披露。",
+      "scope": "domain",
+      "confidence": 0.9
+    }
+  ],
+  "negative": [
+    {
+      "markers": [
+        "没有风险",
+        "没写估值",
+        "把观点当事实",
+        "没有反例",
+        "没有催化剂"
+      ],
+      "kind": "failure_avoidance",
+      "instruction": "投研结论不能把观点当事实，缺估值假设或风险披露时必须补齐。",
+      "scope": "domain",
+      "confidence": 0.9
+    }
+  ]
+}

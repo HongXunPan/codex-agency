@@ -1,0 +1,50 @@
+{
+  "positive": [
+    {
+      "markers": [
+        "接口清楚",
+        "接口很清楚",
+        "接口边界",
+        "边界清楚",
+        "契约清晰",
+        "字段清楚",
+        "数据流清楚"
+      ],
+      "kind": "workflow_method",
+      "instruction": "后端方案先定义接口契约、数据模型、异常路径与验证方式，再展开实现细节。",
+      "scope": "domain",
+      "confidence": 0.92
+    },
+    {
+      "markers": [
+        "鉴权",
+        "幂等",
+        "事务",
+        "并发",
+        "回滚",
+        "可观测性",
+        "错误处理"
+      ],
+      "kind": "domain_pattern",
+      "instruction": "后端回答优先覆盖鉴权、幂等、事务、并发、回滚与可观测性。",
+      "scope": "domain",
+      "confidence": 0.9
+    }
+  ],
+  "negative": [
+    {
+      "markers": [
+        "只写 happy path",
+        "没写异常",
+        "没写回滚",
+        "没写事务",
+        "没写并发",
+        "没考虑鉴权"
+      ],
+      "kind": "failure_avoidance",
+      "instruction": "后端方案不能只写 happy path，要补错误处理、兼容策略与数据一致性。",
+      "scope": "domain",
+      "confidence": 0.9
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "default_risk": "low",
+  "needs_human_review": [
+    "send_mass_message",
+    "publish_campaign"
+  ]
+}

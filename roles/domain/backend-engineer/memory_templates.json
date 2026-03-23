@@ -1,0 +1,22 @@
+{
+  "templates": [
+    {
+      "kind": "workflow_method",
+      "instruction": "后端方案先定义接口契约、数据模型、异常路径与验证方式，再展开实现细节。",
+      "scope": "domain",
+      "confidence": 0.9
+    },
+    {
+      "kind": "domain_pattern",
+      "instruction": "后端回答优先覆盖鉴权、幂等、事务、并发、回滚与可观测性。",
+      "scope": "domain",
+      "confidence": 0.88
+    },
+    {
+      "kind": "failure_avoidance",
+      "instruction": "后端方案不能只写 happy path，要补错误处理、兼容策略与数据一致性。",
+      "scope": "domain",
+      "confidence": 0.85
+    }
+  ]
+}
