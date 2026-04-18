@@ -1,0 +1,21 @@
+{
+  "id": "candidate-efde0beca50b-neg00",
+  "kind": "failure_avoidance",
+  "scope": "project",
+  "domain": [],
+  "trigger": [
+    "generalist"
+  ],
+  "instruction": "回答先给结论，再按需展开，避免冗长铺垫。",
+  "evidence": [
+    "codex-2e2c19c711a4",
+    "feedback-efde0beca50b"
+  ],
+  "confidence": 0.83,
+  "status": "approved",
+  "source": "explicit_negative",
+  "created_at": "2026-03-23T05:32:44.169018+00:00",
+  "project_scope_key": "codex-6c8c21ddab",
+  "project": "/Users/hongxunpan/Code/mealio/mini",
+  "approved_at": "2026-04-18T03:21:13.503866+00:00"
+}
