@@ -22,7 +22,8 @@
     "meta_improvement": 1,
     "identity_strategy": 1,
     "project_fact": 2,
-    "summary_snapshot": 1
+    "summary_snapshot": 1,
+    "style_trait": 1
   },
   "language": "zh-CN",
   "feedback": {
