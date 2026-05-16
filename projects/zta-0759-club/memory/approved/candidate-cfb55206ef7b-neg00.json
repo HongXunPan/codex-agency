@@ -1,0 +1,21 @@
+{
+  "id": "candidate-cfb55206ef7b-neg00",
+  "kind": "failure_avoidance",
+  "scope": "project",
+  "domain": [],
+  "trigger": [
+    "generalist"
+  ],
+  "instruction": "回答先给结论，再按需展开，避免冗长铺垫。",
+  "evidence": [
+    "codex-136e0ea6c369",
+    "feedback-cfb55206ef7b"
+  ],
+  "confidence": 0.83,
+  "status": "approved",
+  "source": "explicit_negative",
+  "created_at": "2026-04-25T13:55:48.488177+00:00",
+  "project_scope_key": "zta-0759-club",
+  "project": "/Users/hongxunpan/Code/ZTA/0759-club",
+  "approved_at": "2026-05-16T02:42:43.196657+00:00"
+}

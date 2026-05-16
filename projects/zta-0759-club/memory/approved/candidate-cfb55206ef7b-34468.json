@@ -1,0 +1,22 @@
+{
+  "id": "candidate-cfb55206ef7b-34468",
+  "kind": "user_preference",
+  "scope": "project",
+  "domain": [],
+  "trigger": [
+    "generalist",
+    "都做"
+  ],
+  "instruction": "回答先给结论，再按需展开，控制篇幅。",
+  "evidence": [
+    "codex-136e0ea6c369",
+    "feedback-cfb55206ef7b"
+  ],
+  "confidence": 0.82,
+  "status": "approved",
+  "source": "explicit_negative",
+  "created_at": "2026-04-25T13:55:48.488162+00:00",
+  "project_scope_key": "zta-0759-club",
+  "project": "/Users/hongxunpan/Code/ZTA/0759-club",
+  "approved_at": "2026-05-16T02:42:41.783616+00:00"
+}
