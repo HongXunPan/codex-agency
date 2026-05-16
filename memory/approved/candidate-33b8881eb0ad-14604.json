@@ -1,0 +1,24 @@
+{
+  "id": "candidate-33b8881eb0ad-14604",
+  "kind": "domain_pattern",
+  "scope": "domain",
+  "domain": [
+    "generalist"
+  ],
+  "trigger": [
+    "generalist",
+    "你出的中保真与低保真区别在哪里"
+  ],
+  "instruction": "跨领域任务优先用结构化框架组织回答，并标出下一步动作。",
+  "evidence": [
+    "codex-514f5cf0f298",
+    "feedback-33b8881eb0ad"
+  ],
+  "confidence": 0.76,
+  "status": "approved",
+  "source": "explicit_positive",
+  "created_at": "2026-04-20T07:08:03.490200+00:00",
+  "project_scope_key": "zta-0759-club",
+  "project": "/Users/hongxunpan/Code/ZTA/0759-club",
+  "approved_at": "2026-05-16T02:49:10.459911+00:00"
+}
