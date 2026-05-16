@@ -3,32 +3,38 @@
     {
       "id": "v1-bootstrap",
       "title": "初始化目录与命令入口",
-      "status": "planned"
+      "status": "completed",
+      "status_note": "已完成全局 codex-agent 命令入口、v2 分层目录与 bootstrap 默认配置。"
     },
     {
       "id": "v1-routing",
       "title": "任务分类与角色路由",
-      "status": "planned"
+      "status": "completed",
+      "status_note": "已完成语义路由落地、路由 replay 与第一轮调优；仍有第二轮调优空间。"
     },
     {
       "id": "v1-feedback",
       "title": "反馈抓取与候选记忆生成",
-      "status": "planned"
+      "status": "completed",
+      "status_note": "已完成反馈导入、显式反馈分类、style_trait 学习与 learning guard 守卫。"
     },
     {
       "id": "v1-review",
       "title": "审批与长期记忆晋升",
-      "status": "planned"
+      "status": "completed",
+      "status_note": "已完成审批链路、trial 晋升与 backlog 清零。"
     },
     {
       "id": "v1-roadmap",
       "title": "路线图沉淀与版本演进记录",
-      "status": "planned"
+      "status": "in_progress",
+      "status_note": "已补齐总盘、routing、review-backlog、learning-guard 等状态视图；仍需继续同步剩余真相与回归基线。"
     },
     {
       "id": "v1-sync",
       "title": "已批准成果的同步能力",
-      "status": "planned"
+      "status": "completed",
+      "status_note": "已完成 shared repo 同步、maintenance 流程与 project manifest 基础能力。"
     }
   ]
 }
