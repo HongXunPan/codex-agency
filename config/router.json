@@ -166,23 +166,57 @@
     ]
   },
   "domain_routes": {
+    "frontend-designer": {
+      "regex": [
+        "中保真",
+        "低保真",
+        "高保真",
+        "线框",
+        "原型"
+      ],
+      "intent_phrases": [
+        "交互稿",
+        "原型稿",
+        "保真方案"
+      ]
+    },
     "backend-engineer": {
       "regex": [
         "接口设计",
         "数据库设计",
         "服务端",
-        "后端方案"
+        "后端方案",
+        "validator",
+        "ruleclass",
+        "rulename",
+        "projection"
       ],
       "intent_phrases": [
         "补个接口",
         "设计后端接口",
-        "后端怎么实现"
+        "后端怎么实现",
+        "数据类型接口",
+        "常量使用"
       ],
       "co_occurrence_boost": [
         {
           "all_of": [
             "接口",
             "数据库"
+          ],
+          "weight": 2
+        },
+        {
+          "all_of": [
+            "rule",
+            "class"
+          ],
+          "weight": 2
+        },
+        {
+          "all_of": [
+            "validator",
+            "rule"
           ],
           "weight": 2
         }
@@ -329,12 +363,23 @@
         "是什么",
         "为什么",
         "有什么区别",
-        "含义是什么"
+        "含义是什么",
+        "区别在哪里",
+        "需不需要",
+        "能不能",
+        "会不会",
+        "是否有必要",
+        "有没有必要"
       ],
       "intent_phrases": [
         "帮我澄清一下",
         "解释一下",
-        "说清楚区别"
+        "说清楚区别",
+        "区别在哪里",
+        "需不需要",
+        "能不能",
+        "有没有必要",
+        "是否有必要"
       ],
       "negative_signals": [
         {
@@ -480,7 +525,7 @@
     "default_stage_role": "executor",
     "domain_min_confidence_score": 2,
     "domain_min_margin": 1,
-    "stage_min_confidence_score": 2,
-    "stage_min_margin": 2
+    "stage_min_confidence_score": 1,
+    "stage_min_margin": 1
   }
 }
