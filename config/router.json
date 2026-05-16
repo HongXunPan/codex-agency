@@ -164,5 +164,323 @@
       "落地",
       "implement"
     ]
+  },
+  "domain_routes": {
+    "backend-engineer": {
+      "regex": [
+        "接口设计",
+        "数据库设计",
+        "服务端",
+        "后端方案"
+      ],
+      "intent_phrases": [
+        "补个接口",
+        "设计后端接口",
+        "后端怎么实现"
+      ],
+      "co_occurrence_boost": [
+        {
+          "all_of": [
+            "接口",
+            "数据库"
+          ],
+          "weight": 2
+        }
+      ]
+    },
+    "debugger": {
+      "regex": [
+        "修.*bug",
+        "排查.*异常",
+        "定位.*问题"
+      ],
+      "intent_phrases": [
+        "帮我看看报错",
+        "定位一下问题",
+        "排查一下"
+      ],
+      "co_occurrence_boost": [
+        {
+          "all_of": [
+            "报错",
+            "定位"
+          ],
+          "weight": 2
+        }
+      ]
+    },
+    "researcher": {
+      "regex": [
+        "查一下.*最新",
+        "对比.*差异",
+        "调研.*方案"
+      ],
+      "intent_phrases": [
+        "帮我调研",
+        "查一下",
+        "对比一下",
+        "看一下最新"
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "直接实现",
+            "直接改"
+          ],
+          "weight": -2
+        }
+      ]
+    },
+    "product-strategist": {
+      "regex": [
+        "分阶段",
+        "实施路径",
+        "演进",
+        "长期架构",
+        "路线图"
+      ],
+      "intent_phrases": [
+        "帮我规划",
+        "给我一个方案",
+        "怎么推进",
+        "拆一下阶段目标"
+      ],
+      "co_occurrence_boost": [
+        {
+          "all_of": [
+            "长期",
+            "架构"
+          ],
+          "weight": 3
+        },
+        {
+          "all_of": [
+            "方案",
+            "分阶段"
+          ],
+          "weight": 2
+        },
+        {
+          "all_of": [
+            "路线图",
+            "阶段"
+          ],
+          "weight": 2
+        }
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "直接改",
+            "直接实现",
+            "别规划"
+          ],
+          "weight": -4
+        }
+      ]
+    },
+    "openai-builder": {
+      "regex": [
+        "responses api",
+        "agents sdk",
+        "openai api"
+      ],
+      "intent_phrases": [
+        "怎么用 openai",
+        "帮我接 openai",
+        "openai 怎么做"
+      ],
+      "co_occurrence_boost": [
+        {
+          "all_of": [
+            "openai",
+            "api"
+          ],
+          "weight": 2
+        }
+      ]
+    },
+    "automation-operator": {
+      "regex": [
+        "自动化",
+        "定时任务",
+        "批处理",
+        "工作流"
+      ],
+      "intent_phrases": [
+        "写个脚本",
+        "做个自动化",
+        "跑个批处理"
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "不要脚本",
+            "别自动化"
+          ],
+          "weight": -3
+        }
+      ]
+    }
+  },
+  "stage_routes": {
+    "clarifier": {
+      "regex": [
+        "是什么",
+        "为什么",
+        "有什么区别",
+        "含义是什么"
+      ],
+      "intent_phrases": [
+        "帮我澄清一下",
+        "解释一下",
+        "说清楚区别"
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "直接改",
+            "直接实现"
+          ],
+          "weight": -3
+        }
+      ]
+    },
+    "planner": {
+      "regex": [
+        "分阶段",
+        "实施路径",
+        "怎么推进",
+        "路线图"
+      ],
+      "intent_phrases": [
+        "给我一个方案",
+        "怎么做",
+        "如何推进",
+        "分几步"
+      ],
+      "co_occurrence_boost": [
+        {
+          "all_of": [
+            "长期",
+            "架构"
+          ],
+          "weight": 3
+        },
+        {
+          "all_of": [
+            "方案",
+            "阶段"
+          ],
+          "weight": 2
+        }
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "直接改",
+            "直接实现",
+            "马上修",
+            "别规划"
+          ],
+          "weight": -4
+        }
+      ]
+    },
+    "reviewer": {
+      "regex": [
+        "验收",
+        "风险评估",
+        "回滚方案",
+        "review"
+      ],
+      "intent_phrases": [
+        "帮我 review",
+        "验收一下",
+        "评估一下风险",
+        "帮我检查"
+      ],
+      "co_occurrence_boost": [
+        {
+          "all_of": [
+            "风险",
+            "回滚"
+          ],
+          "weight": 2
+        }
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "直接实现",
+            "直接改"
+          ],
+          "weight": -3
+        }
+      ]
+    },
+    "reflector": {
+      "regex": [
+        "复盘",
+        "总结经验",
+        "为什么成功",
+        "为什么失败"
+      ],
+      "intent_phrases": [
+        "复盘一下",
+        "总结一下经验",
+        "帮我复盘"
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "直接落地",
+            "直接修"
+          ],
+          "weight": -3
+        }
+      ]
+    },
+    "executor": {
+      "regex": [
+        "直接改",
+        "直接实现",
+        "修.*bug",
+        "落代码"
+      ],
+      "intent_phrases": [
+        "帮我修",
+        "直接做",
+        "直接落地",
+        "开始实现"
+      ],
+      "co_occurrence_boost": [
+        {
+          "all_of": [
+            "bug",
+            "修"
+          ],
+          "weight": 2
+        }
+      ],
+      "negative_signals": [
+        {
+          "any_of": [
+            "只出方案",
+            "先别做",
+            "先规划"
+          ],
+          "weight": -3
+        }
+      ]
+    }
+  },
+  "fallback_rules": {
+    "default_domain_role": "generalist",
+    "default_stage_role": "executor",
+    "domain_min_confidence_score": 2,
+    "domain_min_margin": 1,
+    "stage_min_confidence_score": 2,
+    "stage_min_margin": 2
   }
 }
